@@ -105,3 +105,8 @@ body {
         margin-right: 10px; /* Espaçamento entre os botões */
     }
 }
+
+/* Definindo explicitamente o tamanho do botão "Responder" */
+.reply-btn {
+    width: 120px;
+}
