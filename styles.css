@@ -100,13 +100,25 @@ body {
     .back-btn {
         font-size: 14px;
         padding: 8px 16px;
+        background-color: #FF69B4;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
         display: inline-block;
         margin-top: 10px;
         margin-right: 10px; /* Espaçamento entre os botões */
     }
 }
 
-/* Definindo explicitamente o tamanho do botão "Responder" */
-.reply-btn {
-    width: 120px;
+/* Definindo explicitamente o tamanho do botão "Responder" para dispositivos maiores */
+@media (min-width: 769px) {
+    .reply-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+        width: 120px;
+        display: inline-block;
+    }
 }
