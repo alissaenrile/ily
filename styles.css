@@ -1,6 +1,4 @@
-/* Adicione estilos responsivos aqui */
-
-/* Estilos para telas menores (dispositivos móveis) */
+/* Estilos para dispositivos móveis */
 @media only screen and (max-width: 600px) {
     .email-list ul {
         padding-left: 10px;
@@ -12,6 +10,24 @@
     .email-info h3 {
         margin-right: 10px;
     }
+}
+
+/* Estilos para o botão "Responder" */
+.reply-btn {
+    display: block;
+    margin-top: 20px;
+    padding: 8px 16px; /* Reduzindo o preenchimento */
+    background-color: #FF69B4;
+    color: white;
+    border: none;
+    border-radius: 25px; /* Tornando o botão redondo */
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.reply-btn:hover {
+    background-color: #ff1493;
 }
 
 /* Estilos existentes */
@@ -91,37 +107,4 @@ body {
 
 .email-content h2 {
     margin-top: 0;
-}
-
-.reply-btn {
-    display: block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #FF69B4;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-}
-
-.reply-btn:hover {
-    background-color: #ff1493;
-}
-
-@media (min-width: 768px) {
-    .email-container {
-        flex-direction: row;
-    }
-
-    .email-list {
-        width: 30%;
-        border-bottom: none;
-        border-right: 1px solid #ddd;
-    }
-
-    .email-content {
-        width: 70%;
-    }
 }
