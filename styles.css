@@ -76,9 +76,9 @@ body {
     margin-top: 0;
 }
 
-.reply-btn {
-    display: block;
-    margin-top: 20px;
+.reply-btn,
+.back-btn {
+    font-size: 16px;
     padding: 10px 20px;
     background-color: #FF69B4;
     color: white;
@@ -89,20 +89,19 @@ body {
     text-align: center;
 }
 
-.reply-btn:hover {
+.reply-btn:hover,
+.back-btn:hover {
     background-color: #ff1493;
 }
 
 /* Adicionando regras de mídia para dispositivos móveis */
 @media (max-width: 768px) {
-    .reply-btn {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-
+    .reply-btn,
     .back-btn {
         font-size: 14px;
         padding: 8px 16px;
-        display: block; /* Garantindo que o botão "Voltar" seja visível em dispositivos móveis */
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 10px; /* Espaçamento entre os botões */
     }
 }
